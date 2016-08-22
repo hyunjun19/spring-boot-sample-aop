@@ -21,8 +21,8 @@ public class SampleInstanceProxyTest {
     public void instanceProxyTest() {
         String first = springInstanceService.getHelloMessage();
 
-        HelloWorldService newInstance = new HelloWorldService();
-        String second = newInstance.getHelloMessage();
+        HelloWorldService newInstanceService = new HelloWorldService();
+        String second = newInstanceService.getHelloMessage();
 
         System.out.println("first: " + first + ", second: " + second);
     }
